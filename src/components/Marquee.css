@@ -1,0 +1,41 @@
+#marquee {
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  height: 15vh;
+  width: 100%;
+  /* background-color: #ddd; */
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 1.3vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  background-color: white;
+  position: absolute;
+  top: 28%;
+}
+
+#marquee h1 {
+  display: inline-block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 900;
+  color: transparent;
+  letter-spacing: 5px;
+  /* background-color: blue; */
+  -webkit-text-stroke: 2px black;
+  margin-right: 16px;
+  -webkit-animation: move 7s linear infinite;
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
